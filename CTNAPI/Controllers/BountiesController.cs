@@ -14,6 +14,12 @@ namespace CTNAPI.Controllers
     [RoutePrefix("api/bounty")]
     public class BountiesController : ApiController
     {
+
+        /// <summary>
+        /// End point for recieving bounty requests.
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [Route]
         [HttpPost]
         public IHttpActionResult Post(BountyClaimPostModel model)
