@@ -62,7 +62,8 @@ namespace CTNAPI.Controllers
         public const string KEY = "TRANSACTIONS-";
 
 
-        public GeneralController() {
+        public GeneralController()
+        {
             cachePolicy.AbsoluteExpiration = DateTime.Now.AddMinutes(1);
         }
 
@@ -77,7 +78,8 @@ namespace CTNAPI.Controllers
         {
             CacheModel response = (CacheModel)memCache.Get(KEY);
 
-            if (response == null) {
+            if (response == null)
+            {
                 response = GetFromEtherScan(CONTRACT_SALE_ADDRESS);
             }
 
@@ -88,19 +90,22 @@ namespace CTNAPI.Controllers
         /// <summary>
         /// Subscribers endpoint
         /// </summary>
-        /// <param name="sub">The subscriber model</param>
+        /// <param name="sub">The subscriber mode l</param>
         /// <returns>Status Ok</returns>
         [Route]
+        [HttpPost]
         public IHttpActionResult Post(Subscriber sub)
         {
-            ApplicationDbContext db = new ApplicationDbContext();
-
-            Subscriber existing = db.Subscribers.FirstOrDefault(m => m.Email == sub.Email);
-
-            if (existing == null)
+            using (ApplicationDbContext db = new ApplicationDbContext())
             {
-                db.Subscribers.Add(sub);
-                db.SaveChanges();
+
+                Subscriber existing = db.Subscribers.FirstOrDefault(m => m.Email == sub.Email);
+
+                if (existing == null)
+                {
+                    db.Subscribers.Add(sub);
+                    db.SaveChanges();
+                }
             }
 
             return Ok();
@@ -120,7 +125,7 @@ namespace CTNAPI.Controllers
             if (DateTime.UtcNow >= start)
             {
 
-                string json = service.Get("https://api.etherscan.io/api?module=account&action=txlist&address=0x491559dd3DfdBCA13EDc74569e86c8A0D517975b&startblock=0&endblock=99999999&sort=asc&apikey=0xED3Eb6e24967915E27f790E5101815327a419528"); 
+                string json = service.Get("https://api.etherscan.io/api?module=account&action=txlist&address=0x491559dd3DfdBCA13EDc74569e86c8A0D517975b&startblock=0&endblock=99999999&sort=asc&apikey=0xED3Eb6e24967915E27f790E5101815327a419528");
 
                 Response response = JsonConvert.DeserializeObject<Response>(json);
 
