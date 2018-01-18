@@ -125,7 +125,7 @@ namespace CTNAPI.Controllers
             if (DateTime.UtcNow >= start)
             {
 
-                string json = service.Get("https://api.etherscan.io/api?module=account&action=txlist&address=0x491559dd3DfdBCA13EDc74569e86c8A0D517975b&startblock=0&endblock=99999999&sort=asc&apikey=0xED3Eb6e24967915E27f790E5101815327a419528");
+                string json = service.Get("https://api.etherscan.io/api?module=account&action=txlist&address="+address+"&startblock=0&endblock=99999999&sort=asc&apikey=0xED3Eb6e24967915E27f790E5101815327a419528");
 
                 Response response = JsonConvert.DeserializeObject<Response>(json);
 
