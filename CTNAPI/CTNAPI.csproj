@@ -239,8 +239,8 @@
     <Content Include="frontend\assets\will1.png" />
     <Content Include="frontend\fontawesome-webfont.912ec66d7572ff821749.svg" />
     <Content Include="frontend\index.html" />
-    <Content Include="frontend\inline.0734c092a9e307fcd3f8.bundle.js" />
-    <Content Include="frontend\main.d8cbcdc7941fbb39a9af.bundle.js" />
+    <Content Include="frontend\inline.580b5c701afe344402f6.bundle.js" />
+    <Content Include="frontend\main.a5b084342bd0849f3283.bundle.js" />
     <Content Include="frontend\polyfills.e3ce8e79cc94b9e0c698.bundle.js" />
     <Content Include="frontend\scripts.6f2c79c9e184541ea235.bundle.js" />
     <Content Include="frontend\styles.1633287d4a6ac3157c37.bundle.css" />
