@@ -260,3 +260,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/Sale-API.git
+/Sale-API.git.bfg-report/2018-01-16/21-06-17
+/bfg.jar
