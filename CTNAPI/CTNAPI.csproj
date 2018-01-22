@@ -239,11 +239,11 @@
     <Content Include="frontend\assets\will1.png" />
     <Content Include="frontend\fontawesome-webfont.912ec66d7572ff821749.svg" />
     <Content Include="frontend\index.html" />
-    <Content Include="frontend\inline.a3cee302fee749a8f1b0.bundle.js" />
-    <Content Include="frontend\main.c9e591e00401dc340632.bundle.js" />
+    <Content Include="frontend\inline.fe4b8421c0c2b457b868.bundle.js" />
+    <Content Include="frontend\main.c175c6394425f48e25a0.bundle.js" />
     <Content Include="frontend\polyfills.e3ce8e79cc94b9e0c698.bundle.js" />
     <Content Include="frontend\scripts.6f2c79c9e184541ea235.bundle.js" />
-    <Content Include="frontend\styles.1633287d4a6ac3157c37.bundle.css" />
+    <Content Include="frontend\styles.f2a6717206d4f5ba0d2a.bundle.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
