@@ -13,6 +13,8 @@ using System.Runtime.Caching;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Numerics;
+using System.Web.Http.Cors;
+using System.Threading;
 
 namespace CTNAPI.Controllers
 {
@@ -20,6 +22,7 @@ namespace CTNAPI.Controllers
     /// <summary>
     /// Controller contains the majority of endpoints for the frontend
     /// </summary>
+    [EnableCors(origins: "https://cryptotrust.network", headers: "*", methods: "*")]
     [RoutePrefix("api/ctn")]
     public class GeneralController : ApiController
     {

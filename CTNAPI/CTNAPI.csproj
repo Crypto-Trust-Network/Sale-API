@@ -62,11 +62,17 @@
     <Reference Include="System.Numerics" />
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
@@ -239,11 +245,11 @@
     <Content Include="frontend\assets\will1.png" />
     <Content Include="frontend\fontawesome-webfont.912ec66d7572ff821749.svg" />
     <Content Include="frontend\index.html" />
-    <Content Include="frontend\inline.fe4b8421c0c2b457b868.bundle.js" />
-    <Content Include="frontend\main.c175c6394425f48e25a0.bundle.js" />
-    <Content Include="frontend\polyfills.e3ce8e79cc94b9e0c698.bundle.js" />
-    <Content Include="frontend\scripts.6f2c79c9e184541ea235.bundle.js" />
-    <Content Include="frontend\styles.f2a6717206d4f5ba0d2a.bundle.css" />
+    <Content Include="frontend\inline.e20d3e0c55d668ad3ff1.bundle.js" />
+    <Content Include="frontend\main.8aac80ba6230ef09cabf.bundle.js" />
+    <Content Include="frontend\polyfills.14790ce056d9445ffb8d.bundle.js" />
+    <Content Include="frontend\scripts.941370a6a3d8cfd6411a.bundle.js" />
+    <Content Include="frontend\styles.fd565423cfb7d64984ff.bundle.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
